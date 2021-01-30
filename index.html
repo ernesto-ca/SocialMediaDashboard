@@ -1,87 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  Social Media Dashboard
-  Total Followers: 23,004
+    <title>Frontend Mentor | [Challenge Name Here]</title>
 
-  Dark Mode
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
 
-  
-
-  @nathanf
-  1987
-  Followers
-  12 Today
-
-  @nathanf
-  1044
-  Followers
-  99 Today
-
-  @realnathanf
-  11k
-  Followers
-  1099 Today
-
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
+  <body>
 
 
+    <header>
+      <div class="title">
+        <h1>Social Media Dashboard</h1>
+        <p>Total Followers: 23,004</p>
+      </div>
 
-  Overview - Today
+      <div class="toggle">
+        <p>Dark Mode</p>
+        <label class="switch">
+          <input type="checkbox" id="switch">
+          <span class="slider round"></span>
+        </label>
+      </div>
 
-  Page Views
-  87
-  3%
+      <div class="header-back"></div>
+    </header>
 
-  Likes
-  52
-  2%
+    <main class="container-wide">
 
-  Likes
-  5462
-  2257%
+      <div class="cards-grid">
 
-  Profile Views
-  52k
-  1375%
+        <div class="card-item" id="facebook">
+          <hr>
+          <div class="card-title">
+            <img src="images/icon-facebook.svg" alt="icono facebook">
+            <h3>@nathanf</h3>
+          </div>
+          <div class="card-content">
+            <h2>1987</h2>
+            <h4>Followers</h4>
+            <p> <img src="images/icon-up.svg" alt="Up">12 Today</p>
+          </div>
+        </div>
 
-  Retweets
-  117
-  303%
+        <div class="card-item" id="twitter">
+          <hr>
+          <div class="card-title">
+            <img src="images/icon-twitter.svg" alt="icono twitter">
+            <h3>@nathanf</h3>
+          </div>
+          <div class="card-content">
+            <h2>1044</h2>
+            <h4>Followers</h4>
+            <p> <img src="images/icon-up.svg" alt="Up">99 Today</p>
+          </div>
+        </div>
 
-  Likes
-  507
-  553%
+        <div class="card-item" id="instagram">
+          <hr>
+          <div class="card-title">
+            <img src="images/icon-instagram.svg" alt="icono instagram">
+            <h3>@nathanf</h3>
+          </div>
+          <div class="card-content">
+            <h2>11k</h2>
+            <h4>Followers</h4>
+            <p> <img src="images/icon-up.svg" alt="Up">1099 Today</p>
+          </div>
+        </div>
 
-  Likes
-  107
-  19%
+        <div class="card-item" id="youtube">
+          <hr>
+          <div class="card-title">
+            <img src="images/icon-youtube.svg" alt="icono toutube">
+            <h3>Nathan F.</h3>
+          </div>
+          <div class="card-content">
+            <h2>8239</h2>
+            <h4>Subscribers</h4>
+            <p> <img src="images/icon-down.svg" alt="Down">144 Today</p>
+          </div>
+        </div>
 
-  Total Views
-  1407
-  12%
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+      </div>
+
+
+
+      <div class="overview-title">
+        <h2>Overview - Today</h2>
+      </div>
+
+      <div class="cards-grid">
+
+        <div class="card-item-overview">
+          <hr>
+          <div class="card-title-overview">
+            <h3>Page Views</h3>
+            <img src="images/icon-facebook.svg" alt="icono facebook">
+          </div>
+          <div class="card-content">
+            <h2>87</h2>
+            <p> <img src="images/icon-up.svg" alt="Up">3%</p>
+          </div>
+        </div>
+
+        <div class="card-item-overview" id="Bad">
+          <hr>
+          <div class="card-title-overview">
+            <h3>Likes</h3>
+            <img src="images/icon-facebook.svg" alt="icono facebook">
+          </div>
+          <div class="card-content">
+            <h2>52</h2>
+            <p> <img src="images/icon-down.svg" alt="Down">2%</p>
+          </div>
+        </div>
+
+        <div class="card-item-overview">
+          <hr>
+          <div class="card-title-overview">
+            <h3>Likes</h3>
+            <img src="images/icon-instagram.svg" alt="icono instagram">
+          </div>
+          <div class="card-content">
+            <h2>5462</h2>
+            <p> <img src="images/icon-up.svg" alt="Up">2257%</p>
+          </div>
+        </div>
+
+        <div class="card-item-overview">
+          <hr>
+          <div class="card-title-overview">
+            <h3>Profile Views</h3>
+            <img src="images/icon-instagram.svg" alt="icono instagram">
+          </div>
+          <div class="card-content">
+            <h2>52k</h2>
+            <p> <img src="images/icon-up.svg" alt="Up">1375%</p>
+          </div>
+        </div>
+
+        <div class="card-item-overview">
+          <hr>
+          <div class="card-title-overview">
+            <h3>Retweets</h3>
+            <img src="images/icon-twitter.svg" alt="icono twitter">
+          </div>
+          <div class="card-content">
+            <h2>117</h2>
+            <p> <img src="images/icon-up.svg" alt="Up">303%</p>
+          </div>
+        </div>
+
+        <div class="card-item-overview">
+          <hr>
+          <div class="card-title-overview">
+            <h3>Likes</h3>
+            <img src="images/icon-twitter.svg" alt="icono twitter">
+          </div>
+          <div class="card-content">
+            <h2>507</h2>
+            <p> <img src="images/icon-up.svg" alt="Up">553%</p>
+          </div>
+        </div>
+
+        <div class="card-item-overview" id="Bad">
+          <hr>
+          <div class="card-title-overview">
+            <h3>Likes</h3>
+            <img src="images/icon-youtube.svg" alt="icono youtube">
+          </div>
+          <div class="card-content">
+            <h2>107</h2>
+            <p> <img src="images/icon-down.svg" alt="Down">19%</p>
+          </div>
+        </div>
+
+        <div class="card-item-overview" id="Bad">
+          <hr>
+          <div class="card-title-overview">
+            <h3>Total Views</h3>
+            <img src="images/icon-youtube.svg" alt="icono youtube">
+          </div>
+          <div class="card-content">
+            <h2>1407</h2>
+            <p> <img src="images/icon-down.svg" alt="Down">12%</p>
+          </div>
+        </div>
+
+
+      </div>
+
+
+
+    </main>
+
+
+
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+
 </html>
