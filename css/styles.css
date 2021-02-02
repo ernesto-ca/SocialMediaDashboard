@@ -67,12 +67,13 @@ body {
 
 /* Header Start*/
 header {
-    width: 100%;
-    padding-right: auto;
-    padding-left: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    width: 100%;
+    padding-right: auto;
+    padding-left: auto;
     padding-top: 2rem;
     margin-bottom: 1rem;
 }
@@ -90,10 +91,11 @@ header {
 }
 
 header .title {
-    color: var(--Light-Very-Dark-Blue);
-    margin-left: 8%;
     display: inherit;
     flex-direction: column;
+
+    color: var(--Light-Very-Dark-Blue);
+    margin-left: 8%;
 }
 
 header .title h1 {
@@ -108,10 +110,11 @@ header .title p {
 }
 
 header .toggle {
-    margin-right: 10%;
     align-self: center;
     display: inherit;
     align-items: center;
+
+    margin-right: 10%;
 }
 
 header .toggle p {
@@ -287,14 +290,13 @@ input:checked + .slider:before {
 
 /* Overview Start*/
 .overview-title {
+    margin-left: 8%;
+
     color: var(--Light-Dark-Grayish-Blue);
     width: inherit;
     font-family: var(--font-family);
     font-weight: 700;
     margin-bottom: 2rem;
-}
-.overview-title h2 {
-    margin-left: 8%;
 }
 
 .card-item-overview {
@@ -366,6 +368,62 @@ input:checked + .slider:before {
     background-color: var(--Light-active-card-color);
 }
 /* Main Content End*/
+
+/* Media Queries Start*/
+@media only screen and (max-width: 900px), (orientation: portrait) {
+    /* Header Start*/
+    header {
+        flex-direction: column;
+    }
+
+    header .title {
+        padding-bottom: 2rem;
+        border-bottom: 2px solid black;
+        margin-right: 8%;
+        margin-bottom: 1rem;
+
+        border-color: var(--Light-Dark-Grayish-Blue);
+    }
+
+    header .title h1 {
+        font-size: x-large;
+        margin-bottom: 0.5rem;
+    }
+
+    header .toggle {
+        align-self: unset;
+        align-items: unset;
+        justify-content: space-between;
+        margin-right: 8%;
+        margin-left: 8%;
+    }
+
+    /* Header End*/
+
+    /* Main Content Start*/
+    .cards-grid {
+        margin-bottom: 1rem;
+    }
+
+    .card-item {
+        width: 100%;
+        margin-left: 1.7rem;
+        margin-right: 1.7rem;
+    }
+
+    .overview-title {
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+
+    .card-item-overview {
+        width: 100%;
+        margin-left: 1.7rem;
+        margin-right: 1.7rem;
+    }
+    /* Main Content End*/
+}
+/* Media Queries End*/
 
 .attribution {
     font-size: 11px;
