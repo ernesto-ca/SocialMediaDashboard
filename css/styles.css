@@ -421,6 +421,14 @@ input:checked + .slider:before {
         margin-left: 1.7rem;
         margin-right: 1.7rem;
     }
+
+    .card-title-overview {
+        margin-bottom: 1rem;
+    }
+
+    .card-item-overview .card-content h2 {
+        font-size: 1.5rem;
+    }
     /* Main Content End*/
 }
 /* Media Queries End*/
