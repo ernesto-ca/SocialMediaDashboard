@@ -71,7 +71,6 @@ header {
     flex-direction: row;
     justify-content: space-between;
 
-    width: 100%;
     padding-right: auto;
     padding-left: auto;
     padding-top: 2rem;
@@ -181,7 +180,6 @@ input:checked + .slider:before {
 /* Main Content Start*/
 
 .container-wide {
-    width: 100%;
     margin-right: auto;
     margin-left: auto;
 }
