@@ -423,7 +423,7 @@ input:checked + .slider:before {
     }
 
     .card-title-overview {
-        margin-bottom: 1rem;
+        margin-bottom: 3rem;
     }
 
     .card-item-overview .card-content h2 {
