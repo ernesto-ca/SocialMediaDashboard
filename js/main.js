@@ -21,9 +21,8 @@ const cards = document.querySelectorAll('.card-item, .card-item-overview');
 cards.forEach((card)=>{
     card.addEventListener('click', function(){
         let cad = card.querySelector('.card-content h2').innerHTML;
-        let num = 0;
         if(cad.endsWith('k')){
-            num = parseInt(cad) + 1 ;
+            let num = parseInt(cad) + 1 ;
             card.querySelector('.card-content h2').innerHTML = num + 'k';
         }else{
             num = parseInt(cad) + 1;

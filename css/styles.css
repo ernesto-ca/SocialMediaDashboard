@@ -57,6 +57,7 @@
     outline: none;
     border: none;
     color: inherit;
+    font-family: var(--font-family);
 }
 
 body {
@@ -71,12 +72,10 @@ header {
     flex-direction: row;
     justify-content: space-between;
 
-    padding-right: auto;
-    padding-left: auto;
     padding-top: 2rem;
     margin-bottom: 1rem;
 }
-.header-back {
+.header-bg {
     position: absolute;
     top: 0;
     left: 0;
@@ -98,13 +97,11 @@ header .title {
 }
 
 header .title h1 {
-    font-family: var(--font-family);
     font-weight: 700;
 }
 
 header .title p {
     color: var(--Light-Dark-Grayish-Blue);
-    font-family: var(--font-family);
     font-weight: 700;
 }
 
@@ -118,7 +115,6 @@ header .toggle {
 
 header .toggle p {
     color: hsl(230, 13%, 64%);
-    font-family: var(--font-family);
     font-weight: 700;
     margin-right: 1rem;
 }
@@ -194,7 +190,6 @@ input:checked + .slider:before {
 }
 
 .card-item {
-    font-family: var(--font-family);
     position: relative;
     width: 18rem;
     height: 16rem;
@@ -292,13 +287,11 @@ input:checked + .slider:before {
 
     color: var(--Light-Dark-Grayish-Blue);
     width: inherit;
-    font-family: var(--font-family);
     font-weight: 700;
     margin-bottom: 2rem;
 }
 
 .card-item-overview {
-    font-family: var(--font-family);
     position: relative;
     width: 18rem;
     height: 8rem;
@@ -404,7 +397,7 @@ input:checked + .slider:before {
     }
 
     .card-item {
-        width: 100%;
+        width: 19rem;
         margin-left: 1.7rem;
         margin-right: 1.7rem;
     }
@@ -415,7 +408,7 @@ input:checked + .slider:before {
     }
 
     .card-item-overview {
-        width: 100%;
+        width: 19rem;
         margin-left: 1.7rem;
         margin-right: 1.7rem;
     }
