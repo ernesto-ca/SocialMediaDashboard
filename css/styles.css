@@ -69,7 +69,6 @@ body {
 /* Header Start*/
 header {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
 
     padding-top: 2rem;
@@ -83,13 +82,13 @@ header {
     background-color: var(--Light-background-top-color);
     width: 100%;
     height: 15rem;
-    border-radius: 0 0 1rem 1rem;
+    border-radius: 0 0 16px 16px;
     box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.15);
     transition: background-color 0.5s ease-in-out;
 }
 
 header .title {
-    display: inherit;
+    display: flex;
     flex-direction: column;
 
     color: var(--Light-Very-Dark-Blue);
@@ -107,7 +106,7 @@ header .title p {
 
 header .toggle {
     align-self: center;
-    display: inherit;
+    display: flex;
     align-items: center;
 
     margin-right: 10%;
@@ -134,7 +133,7 @@ header .toggle p {
 }
 
 .slider {
-    border-radius: 2rem;
+    border-radius: 32px;
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -147,7 +146,7 @@ header .toggle p {
 }
 
 .slider:before {
-    border-radius: 50%;
+    border-radius: 50px;
     position: absolute;
     content: '';
     height: 1.2rem;
@@ -197,7 +196,7 @@ input:checked + .slider:before {
     padding: 1.5rem 1rem;
     margin-right: 2rem;
     margin-bottom: 2rem;
-    border-radius: 0.5rem;
+    border-radius: 8px;
     background-color: var(--Light-Grayish-Blue);
     overflow: hidden;
     display: flex;
@@ -231,7 +230,7 @@ input:checked + .slider:before {
 }
 
 .card-item .card-content {
-    padding: 1rem 1rem;
+    padding: 1rem;
     width: 100%;
     height: 100%;
     text-align: center;
@@ -299,7 +298,7 @@ input:checked + .slider:before {
     padding: 2.5rem 2rem;
     margin-right: 2rem;
     margin-bottom: 2rem;
-    border-radius: 0.5rem;
+    border-radius: 8px;
     background-color: var(--Light-Grayish-Blue);
     overflow: hidden;
     display: flex;
@@ -318,7 +317,6 @@ input:checked + .slider:before {
     margin-bottom: 0.25rem;
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
 }
 
 .card-title-overview {
